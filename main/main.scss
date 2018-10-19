@@ -1,0 +1,184 @@
+
+$primary : rgb(37, 37, 37);
+
+body,html { 
+    margin : 0 ;
+    padding :0 ;
+    
+    
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+/*FISRT MOBILE*/
+
+body{
+    margin : 0 ; 
+    padding : 0 ;
+    font-family: 'Montserrat', sans-serif;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    display: grid;
+    background: #ecf0f1;
+    scroll-snap-type:  y mandatory;
+    overflow-y: scroll;
+}
+
+*{
+    margin : 0;
+}
+
+nav{ 
+    position: relative;
+
+}
+
+nav ul { 
+    background: white;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+ul li {
+    transition:.4s;
+    margin: 15px;
+    padding: 16px 20px;
+    text-align: center;
+}
+
+ ul li a{
+    text-decoration: none;
+    color :$primary;
+    text-transform: uppercase;
+    display: block;
+    
+    font-size: .7em;
+}
+
+.toggle {
+    background: white;
+    padding: 1.5em 1.4em;
+    display: block;
+}
+
+.toggle .menu { 
+    float: right;
+    color : $primary;
+    font-size: 1.7em;
+    
+    cursor: pointer;
+    display: block;
+}
+
+.toggle figcaption{
+    color : $primary;
+}
+
+/*HEADER*/
+header {
+    position: relative;
+    height: 750px;
+    
+}
+
+.main{
+    display: grid;
+    
+}
+
+header .main {
+    padding: 2em;
+}
+
+
+.main h1{
+    margin: 80px 0px ;
+    font-size: 2.4em;
+
+  
+}
+
+.main p { 
+    margin: 30px auto;
+    font-size: 1.4em;
+    font-weight: 400;
+}
+
+
+
+
+
+/*section*/
+
+section{
+    position: relative;
+   
+    height: 930px;
+    
+}
+
+section:nth-of-type(1){
+    background: white;
+   
+ }
+
+.portafolio {
+    
+
+    h2 {
+        text-transform: uppercase;
+      
+        font-size: 1.7em;
+        text-align: center;
+        margin-top: 10%;
+    }
+}
+
+.trabajos {
+    position: relative;
+    margin: 54px auto auto 0px;
+}
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Cinzel|Lobster|Permanent+Marker|Playfair+Display+SC');
+
+.titulo-ropa{
+    position: absolute;
+    bottom: -30px;
+    width: 75%;
+    
+    p{ 
+        font-family: 'Playfair Display SC', serif;                color : whitesmoke;
+        text-align: center;
+        padding: 1.5em .5em;
+        text-transform: uppercase;
+    }
+    
+}
+
+
+/*FOOTER*/
+footer {
+    
+    background: #303131;
+    position: relative;
+}
+
+footer .contacto-div{
+    height: 100vh;
+
+
+    h3 {
+        color : whitesmoke;
+        text-transform: uppercase;
+        font-size: 1.7em;
+        margin: 50px auto;
+        text-align: center;
+    }
+}
+
+
+

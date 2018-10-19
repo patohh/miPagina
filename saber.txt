@@ -1,0 +1,7 @@
+- PHP
+- Bootstrap  Angular
+- Framework Laravel
+- HTML5  CSS3
+- API Restful
+- ORM Doctrine
+- SQLSERVER  MYSQL

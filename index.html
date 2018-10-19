@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main/main.css">
+    <link rel="stylesheet" href="./node_modules/sal.js/dist/sal.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    
+</head>
+<body>
+
+   
+
+    <nav class="target1">
+        <div class="toggle">
+            <i class="fas fa-bars menu" id="menu"></i>
+
+            <figcaption>P</figcaption>
+        </div>
+        
+        <ul class="ul">
+           
+            <li>
+                
+                <a href="#">Inicio</a>
+            </li>
+           
+            <li>
+                
+                <a href="#" class="porta" id="porta">Portafolio</a>
+            </li>
+            <li>
+                
+                <a href="#" id="cont">Contacto</a></li>
+        </ul>
+    </nav>
+    <header>
+       <div class="main">
+           <h1 data-sal-duration="1300" data-sal-delay="350" data-sal="slide-down" data-sal-ease="easing-out-bounce" >Patricio Soto</h1>
+        <p data-sal-duration="1300" data-sal-delay="200" data-sal="slide-up" data-sal-ease="easing-out-bounce" >Hola, me llamo patricio soto actualmente estudiante en DuocUC en la carrera de Analista programador computacional,
+            soy un apasionado del desarrollo web y las nuevas tecnologias, me gusta poder superarme cada dia y siempre ser un aporte en el trabajo.
+        </p>
+        
+       </div>
+    </header>
+    <section class="target2 portafolio">
+        <h2 data-sal-duration="1500" data-sal-delay="300" data-sal="slide-down" data-sal-ease="easing-out-bounce">Portafolio</h2>
+        <div class="trabajos ropa" style="background : #aaa; width : 80%; height : 250px;" data-sal-duration="1300" data-sal-delay="300" data-sal="slide-right" data-sal-ease="easing-out-bounce">
+        <div class="efecto titulo-ropa"style="background : #000; height : 70px;" data-sal-duration="1500" data-sal-delay="200" data-sal="slide-left" data-sal-ease="easing-out-bounce" ><p>troska</p></div>
+        </div>
+    </section>
+    <Footer class="contact target3">
+       <div class="contacto-div">
+           <h3>contacto</h3>
+           
+            
+        </div>
+      
+    </Footer>
+    
+    
+    
+
+
+    <script src="./node_modules/sal.js/dist/sal.js"></script>
+    
+    <script >
+        
+    sal({
+        threshold: 1,
+        once: false,
+    });
+    </script>
+    <script type="module">
+        import jump from './node_modules/jump.js/dist/jump.module.js';
+        
+        
+        
+        var Porta = document.getElementById('porta');
+      
+        var con = document.getElementById('cont');
+       
+        Porta.addEventListener('click', () =>{
+            jump('.target2',{
+                duration : 3000
+            });
+        });
+
+
+        con.addEventListener('click', () =>{
+            jump('.target3',{
+                duration : 3000
+            });
+        });
+        
+       
+
+    </script>
+    <script>
+    
+    var acc = document.getElementsByClassName("toggle");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight  + "px";
+    } 
+  });
+}
+
+    
+    </script>
+    <script>
+        
+       $(document).ready(function(){
+           $('.cta').hide();
+           $('.contacto').hide();
+
+           $('.cta').fadeIn(3000);
+           $('.contacto').fadeIn(4000);
+       });
+
+    </script>
+    
+
+    
+</body>
+</html>
