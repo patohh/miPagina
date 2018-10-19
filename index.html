@@ -56,6 +56,12 @@
        <div class="contacto-div">
            <h3>contacto</h3>
            
+           <form action="enviarCorreo.php" method="POST" class="form" novalidate="true">
+           <input class="form-name input-form" type="text" placeholder="Nombre" id="form-name" data-error="Nombre requerido!" required="required" maxlength="50">
+           <input type="email" name="" id="email" placeholder="Correo" required="required" data-error="Ingrese su correo!" maxlength="50">
+           <textarea name="descrip text-area_form text-area" id=""  rows="4" placeholder="Ingrese mensaje" required="required" maxlength="1000"></textarea>
+            <input type="submit">
+        </form>
             
         </div>
       
