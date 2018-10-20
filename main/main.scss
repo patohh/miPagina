@@ -128,11 +128,9 @@ section:nth-of-type(1){
  }
 
 .portafolio {
-    
 
     h2 {
         text-transform: uppercase;
-      
         font-size: 1.7em;
         text-align: center;
         margin-top: 10%;
@@ -165,12 +163,8 @@ footer {
     
     background: #303131;
     position: relative;
-}
-
-footer .contacto-div{
     height: 100vh;
-
-
+    
     h3 {
         color : whitesmoke;
         text-transform: uppercase;
@@ -179,6 +173,46 @@ footer .contacto-div{
         text-align: center;
     }
 }
+
+footer form input{
+    border : none;
+    background-color: transparent;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    margin: 25px auto 100 auto;
+    padding: 10px 0px;
+    position: relative;
+    width: 300px;
+    color : whitesmoke;
+
+    &:focus {
+        outline: none;    
+      }
+}
+
+input::-webkit-input-placeholder {
+    color: #AAA;
+  }
+  
+  input:focus::-webkit-input-placeholder {
+    color: white;
+  }
+
+  textarea{
+      border: none;
+      background-color: transparent;
+    color: white; 
+
+      &:focus{
+          outline: none;
+      }
+  }
+
+
+
 
 
 
