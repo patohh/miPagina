@@ -54,35 +54,23 @@
         <div class="efecto titulo-ropa"style="background : #000; height : 70px;" data-sal-duration="1500" data-sal-delay="200" data-sal="slide-left" data-sal-ease="easing-out-bounce" ><p>troska</p></div>
         </div>
     </section>
-    <Footer class="contact target3">
-       <div class="contacto-div">
-           <h3>contacto</h3>
-           <!--Formulario de contacto-->
-           <form action="enviarContacto.php">
-               <div class="group-form name">
-                <input type="text" placeholder="nombre" maxlength="50" required="required" >
-                <div class="border"></div>
-               </div>
-               <div class="group-form email">
-                <input type="email" placeholder="Correo" maxlength="60" required="" >
-                <div class="border"></div>
-               </div>
-               <div class="group-form textarea">
-                <textarea name="" id="" placeholder="ingrese su mensaje aqui" rows="4"></textarea>
-                <div class="border"></div>
-            </div>
-           </form>
-            
-        </div>
+    <Footer class="contact target3" >
+       <div id="particles-js">
+         <h3 style="color : white; text-transform : uppercase; text-align : center; font-size : 1.7em;"
+         data-sal-duration="1300" data-sal="slide-up" data-sal-delay="300" data-sal-ease="easing-out-bounce">contacto</h3>
+         <div class="contacto-mail"></div>
+         <div class="form-contact"></div>
+       </div>
       
     </Footer>
     
     
     
     <!--se debe crear particles.js-->
-
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="./js/particles/particles.js"></script>
+    <script src="./js/particles/app.js"></script>
     <script src="./node_modules/sal.js/dist/sal.js"></script>
-    
     <script > 
     sal({
         threshold: 1,
