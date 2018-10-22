@@ -181,7 +181,11 @@ footer {
 footer .title{
 
     h3{
-        background: rgb(64, 185, 185);
+        background: #40a8a8; /* Old browsers */
+        background: -moz-linear-gradient(left, #40a8a8 0%, #57b2b0 40%, #38c9b8 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(left, #40a8a8 0%,#57b2b0 40%,#38c9b8 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right, #40a8a8 0%,#57b2b0 40%,#38c9b8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#40a8a8', endColorstr='#38c9b8',GradientType=1 ); /* IE6-9 */
         color : whitesmoke; 
         text-transform : uppercase;
          text-align : left; 
@@ -223,8 +227,12 @@ footer .correos{
     background: none;
     h4{
         -webkit-clip-path: polygon(0 0, 100% 0, 86% 100%, 0% 100%);
-clip-path: polygon(0 0, 100% 0, 86% 100%, 0% 100%);
-        background: rgb(64, 185, 185);
+    clip-path: polygon(0 0, 100% 0, 86% 100%, 0% 100%);
+    background: #40a8a8; /* Old browsers */
+    background: -moz-linear-gradient(left, #40a8a8 0%, #57b2b0 40%, #38c9b8 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #40a8a8 0%,#57b2b0 40%,#38c9b8 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #40a8a8 0%,#57b2b0 40%,#38c9b8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#40a8a8', endColorstr='#38c9b8',GradientType=1 ); /* IE6-9 */
         color : whitesmoke;
         padding :10px 40px;
         width: 50%;
@@ -234,8 +242,23 @@ clip-path: polygon(0 0, 100% 0, 86% 100%, 0% 100%);
 }
 
 form{
-
+    display: block;
     padding: 2em;
     height: calc(60vh - 4em);
 }
 
+.submit .enviar{
+    border : none;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#40a8a8+0,57b2b0+40,38c9b8+100 */
+    background: #40a8a8; /* Old browsers */
+    background: -moz-linear-gradient(left, #40a8a8 0%, #57b2b0 40%, #38c9b8 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #40a8a8 0%,#57b2b0 40%,#38c9b8 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #40a8a8 0%,#57b2b0 40%,#38c9b8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#40a8a8', endColorstr='#38c9b8',GradientType=1 ); /* IE6-9 */
+    padding: 15px 50px;
+    color : whitesmoke;
+    text-transform: uppercase;
+    border-radius: 40px;
+    margin : 30px auto;
+    
+}
