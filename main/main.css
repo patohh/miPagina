@@ -151,8 +151,53 @@ footer {
   background: #202020;
 }
 
-#particles-js h3 {
-  margin-top: 50px;
+.title {
+  margin-top: 40px;
+}
+
+footer .title h3 {
+  background: #40b9b9;
+  color: whitesmoke;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.7em;
+  width: 50%;
+  padding: 10px 40px;
+}
+
+footer .title p {
+  margin-top: 30px;
+  color: white;
+  text-align: left;
+  padding: 10px 30px;
+  font-size: .8em;
+}
+
+footer .correos {
+  margin-top: 30px;
+  padding: 1.4em 1.5em;
+}
+
+footer .correos i {
+  float: left;
+  display: block;
+  margin-right: 29px;
+}
+
+footer .correos p {
+  margin-bottom: 20px;
+}
+
+.form-contact {
+  margin-top: 60px;
+}
+
+.form-contact h4 {
+  background: #40b9b9;
+  color: whitesmoke;
+  padding: 10px 40px;
+  width: 50%;
+  font-size: 1.6em;
 }
 
 footer form input {
