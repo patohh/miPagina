@@ -161,16 +161,17 @@ section:nth-of-type(1){
 /*FOOTER*/
 footer {
     
-    position: relative;
+
     height: 830px;
 }
 
 #particles-js{
-    position: absolute;
+    position: relative;
     margin: 0;
     width: 100%;
     height: 830px;
     background: rgb(32, 32, 32);
+    z-index: 1000;
 
 }
 .title{
@@ -190,7 +191,7 @@ footer .title{
     }
 
     p{
-        margin-top : 30px;
+        margin-top : 40px;
         color : white;
         text-align: left;
         padding : 10px 30px;
@@ -216,30 +217,36 @@ footer .correos{
 
 
 .form-contact{
-    margin-top: 60px;
-
+    margin-top: 50px;
+    background: none;
     h4{
         background: rgb(64, 185, 185);
         color : whitesmoke;
         padding :10px 40px;
         width: 50%;
-        font-size: 1.6em;
+        font-size: 1.4em;
+        text-transform: uppercase;
     }
+}
+
+form{
+    margin: 40px auto;
 }
 
 footer form input{
     border : none;
     background-color: transparent;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid rgb(53, 51, 51);
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.2em;
-    text-align: center;
-    margin: 25px auto 100 auto;
-    padding: 10px 0px;
+    font-size: 1em;
+    
+    padding: 10px 30px;
+    margin : 10px;
     position: relative;
     width: 300px;
     color : whitesmoke;
+    left: 6%;
 
     &:focus {
         outline: none;    
@@ -248,6 +255,7 @@ footer form input{
 
 input::-webkit-input-placeholder {
     color: #AAA;
+    transition: .7s;
   }
   
   input:focus::-webkit-input-placeholder {

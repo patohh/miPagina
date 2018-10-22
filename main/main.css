@@ -139,16 +139,16 @@ section:nth-of-type(1) {
 
 /*FOOTER*/
 footer {
-  position: relative;
   height: 830px;
 }
 
 #particles-js {
-  position: absolute;
+  position: relative;
   margin: 0;
   width: 100%;
   height: 830px;
   background: #202020;
+  z-index: 1000;
 }
 
 .title {
@@ -166,7 +166,7 @@ footer .title h3 {
 }
 
 footer .title p {
-  margin-top: 30px;
+  margin-top: 40px;
   color: white;
   text-align: left;
   padding: 10px 30px;
@@ -189,7 +189,8 @@ footer .correos p {
 }
 
 .form-contact {
-  margin-top: 60px;
+  margin-top: 50px;
+  background: none;
 }
 
 .form-contact h4 {
@@ -197,23 +198,28 @@ footer .correos p {
   color: whitesmoke;
   padding: 10px 40px;
   width: 50%;
-  font-size: 1.6em;
+  font-size: 1.4em;
+  text-transform: uppercase;
+}
+
+form {
+  margin: 40px auto;
 }
 
 footer form input {
   border: none;
   background-color: transparent;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #353333;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.2em;
-  text-align: center;
-  margin: 25px auto 100 auto;
-  padding: 10px 0px;
+  font-size: 1em;
+  padding: 10px 30px;
+  margin: 10px;
   position: relative;
   width: 300px;
   color: whitesmoke;
+  left: 6%;
 }
 
 footer form input:focus {
@@ -222,6 +228,8 @@ footer form input:focus {
 
 input::-webkit-input-placeholder {
   color: #AAA;
+  -webkit-transition: .7s;
+  transition: .7s;
 }
 
 input:focus::-webkit-input-placeholder {
