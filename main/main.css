@@ -159,10 +159,12 @@ footer .title h3 {
   background: #40b9b9;
   color: whitesmoke;
   text-transform: uppercase;
-  text-align: center;
+  text-align: left;
   font-size: 1.7em;
   width: 50%;
   padding: 10px 40px;
+  -webkit-clip-path: polygon(0 0, 100% 0, 86% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 86% 100%, 0% 100%);
 }
 
 footer .title p {
@@ -189,11 +191,13 @@ footer .correos p {
 }
 
 .form-contact {
-  margin-top: 50px;
+  margin-top: 40px;
   background: none;
 }
 
 .form-contact h4 {
+  -webkit-clip-path: polygon(0 0, 100% 0, 86% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 86% 100%, 0% 100%);
   background: #40b9b9;
   color: whitesmoke;
   padding: 10px 40px;
@@ -203,46 +207,7 @@ footer .correos p {
 }
 
 form {
-  margin: 40px auto;
-}
-
-footer form input {
-  border: none;
-  background-color: transparent;
-  border-bottom: 1px solid #353333;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1em;
-  padding: 10px 30px;
-  margin: 10px;
-  position: relative;
-  width: 300px;
-  color: whitesmoke;
-  left: 6%;
-}
-
-footer form input:focus {
-  outline: none;
-}
-
-input::-webkit-input-placeholder {
-  color: #AAA;
-  -webkit-transition: .7s;
-  transition: .7s;
-}
-
-input:focus::-webkit-input-placeholder {
-  color: white;
-}
-
-textarea {
-  border: none;
-  background-color: transparent;
-  color: white;
-}
-
-textarea:focus {
-  outline: none;
+  padding: 2em;
+  height: calc(60vh - 4em);
 }
 /*# sourceMappingURL=main.css.map */

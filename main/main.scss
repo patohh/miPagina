@@ -184,10 +184,12 @@ footer .title{
         background: rgb(64, 185, 185);
         color : whitesmoke; 
         text-transform : uppercase;
-         text-align : center; 
+         text-align : left; 
         font-size : 1.7em;
         width: 50%;
         padding :10px 40px;
+        -webkit-clip-path: polygon(0 0, 100% 0, 86% 100%, 0% 100%);
+clip-path: polygon(0 0, 100% 0, 86% 100%, 0% 100%);
     }
 
     p{
@@ -217,9 +219,11 @@ footer .correos{
 
 
 .form-contact{
-    margin-top: 50px;
+    margin-top: 40px;
     background: none;
     h4{
+        -webkit-clip-path: polygon(0 0, 100% 0, 86% 100%, 0% 100%);
+clip-path: polygon(0 0, 100% 0, 86% 100%, 0% 100%);
         background: rgb(64, 185, 185);
         color : whitesmoke;
         padding :10px 40px;
@@ -230,50 +234,8 @@ footer .correos{
 }
 
 form{
-    margin: 40px auto;
+
+    padding: 2em;
+    height: calc(60vh - 4em);
 }
-
-footer form input{
-    border : none;
-    background-color: transparent;
-    border-bottom: 1px solid rgb(53, 51, 51);
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;
-    
-    padding: 10px 30px;
-    margin : 10px;
-    position: relative;
-    width: 300px;
-    color : whitesmoke;
-    left: 6%;
-
-    &:focus {
-        outline: none;    
-      }
-}
-
-input::-webkit-input-placeholder {
-    color: #AAA;
-    transition: .7s;
-  }
-  
-  input:focus::-webkit-input-placeholder {
-    color: white;
-  }
-
-  textarea{
-      border: none;
-      background-color: transparent;
-    color: white; 
-
-      &:focus{
-          outline: none;
-      }
-  }
-
-
-
-
-
 
