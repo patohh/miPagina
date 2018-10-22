@@ -193,7 +193,7 @@ footer .title{
         width: 50%;
         padding :10px 40px;
         -webkit-clip-path: polygon(0 0, 100% 0, 86% 100%, 0% 100%);
-clip-path: polygon(0 0, 100% 0, 86% 100%, 0% 100%);
+        clip-path: polygon(0 0, 100% 0, 86% 100%, 0% 100%);
     }
 
     p{
@@ -213,6 +213,7 @@ footer .correos{
         float: left;
         display: block;
         margin-right: 29px;
+        margin-left: 20px;
 
     }
 
@@ -244,7 +245,31 @@ footer .correos{
 form{
     display: block;
     padding: 2em;
-    height: calc(60vh - 4em);
+    height: calc(70vh - 4em);
+
+    input { 
+        border : none;
+        margin: 15px auto;
+        background : transparent;
+        border-bottom: 1px solid #aaa;
+        padding: 10px 0px;
+        width: 100%;
+        color : white;
+        font-size: 1.2em;
+        &:focus{
+            color : whitesmoke
+        }
+    }
+
+    textarea{
+        margin-top: 15px;
+        width: 100%;
+        border: none;
+        background: transparent;
+        border-bottom: 1px solid #aaa;
+        font-size: 1.2em;
+        color : whitesmoke;
+    }
 }
 
 .submit .enviar{
@@ -260,5 +285,5 @@ form{
     text-transform: uppercase;
     border-radius: 40px;
     margin : 30px auto;
-    
+    display: block;
 }
