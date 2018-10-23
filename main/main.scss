@@ -133,10 +133,37 @@ section{
     height: 930px;
     
 }
-
+/*aboutme*/
 section:nth-of-type(1){
     background: white;
+
+    h1
+    {
+        color :#f484ab;
+        text-transform: uppercase;
+        margin: 30px auto;
+        padding: 20px 25px;
+        text-decoration: underline wavy #f49aa3; 
+        text-decoration-color: #f49aa3;
+    }
+
+    p
+    {
+        color : grey;
+        width: 60%;
+        margin: 40px auto;
+    }
 }
+
+section:nth-of-type(2){
+
+
+    h1 {
+        color :#7dbce4;
+    }
+}
+
+
 
 
 .portafolio {
@@ -258,7 +285,7 @@ form{
         color : white;
         font-size: 1.2em;
         &:focus{
-            color : whitesmoke
+            color : #7dbce4;
         }
     }
 
@@ -270,6 +297,10 @@ form{
         border-bottom: 1px solid #aaa;
         font-size: 1.2em;
         color : whitesmoke;
+
+        &:focus{
+            color : #7dbce4;
+        }
     }
 }
 
