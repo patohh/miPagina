@@ -24,7 +24,6 @@
         <ul class="ul">
            
             <li>
-                
                 <a href="#">Inicio</a>
             </li>
            
@@ -34,20 +33,20 @@
             <li>
                 <a href="#" class="porta" id="porta">TROSKA</a>
             </li>
-            <li>
-                
-                <a href="#" id="cont">Contacto</a></li>
+            <li>  
+                <a href="#" id="cont">Contacto</a>
+            </li>
         </ul>
     </nav>
     <header>
        <div class="main">
-           <h1 data-sal-duration="1300" data-sal-delay="350" data-sal="slide-down" data-sal-ease="easing-out-bounce" >Desarrolador freeLance ! </h1>
-            <a href="#">sobre mi</a>
-        
+        <h1 class="title-h" >Desarrolador freeLance ! </h1>
+        <a href="#" id="about-me">sobre mi</a>
        </div>
     </header>
     <section class="sobre-mi target4">
         <h1>sobre mi</h1>
+        <p style="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam eligendi fugiat adipisci at sequi quibusdam ratione consequatur ipsa possimus sapiente suscipit voluptates, tenetur corrupti quia esse, porro quod repudiandae vero?</p>
     </section>
     <section class="target2 portafolio">
        <h1>postafolio</h1>
@@ -109,12 +108,18 @@
     <script type="module">
         import jump from './node_modules/jump.js/dist/jump.module.js';
         
-        
+        var me = document.getElementById('about-me');
         
         var Porta = document.getElementById('porta');
       
         var con = document.getElementById('cont');
        
+        me.addEventListener('click',() => {
+            jump('.target4',{
+                duration : 3000
+            });
+        });
+
         Porta.addEventListener('click', () =>{
             jump('.target2',{
                 duration : 3000
@@ -128,7 +133,13 @@
             });
         });
         
-       
+       $(document).ready(function(){
+           $('.title-h').hide();
+           $('#about-me').hide();
+
+           $('.title-h').fadeIn(3000);
+           $('#about-me').fadeIn(3000);
+       });
 
     </script>
     <script>

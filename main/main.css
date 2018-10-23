@@ -54,7 +54,7 @@ ul li a {
   text-transform: uppercase;
   display: block;
   color: whitesmoke;
-  font-size: .7em;
+  font-size: .8em;
 }
 
 .toggle {
@@ -79,9 +79,16 @@ ul li a {
 header {
   position: relative;
   height: 750px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f57b89+0,f49aa3+53,f484ab+100 */
   background: #f57b89;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 71%, 0% 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 71%, 0% 100%);
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(#f57b89), color-stop(53%, #f49aa3), to(#f484ab));
+  background: linear-gradient(to bottom, #f57b89 0%, #f49aa3 53%, #f484ab 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f57b89', endColorstr='#f484ab',GradientType=0 );
+  /* IE6-9 */
 }
 
 .main {
@@ -117,6 +124,10 @@ section {
   position: relative;
   background: #ffdfdf;
   height: 930px;
+}
+
+section:nth-of-type(1) {
+  background: white;
 }
 
 .portafolio h2 {

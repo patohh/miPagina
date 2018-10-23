@@ -57,7 +57,7 @@ ul li {
     text-transform: uppercase;
     display: block;
     color : whitesmoke;
-    font-size: .7em;
+    font-size: .8em;
 }
 
 .toggle {
@@ -84,11 +84,15 @@ ul li {
 header {
     position: relative;
     height: 750px;
-    background: #f57b89;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f57b89+0,f49aa3+53,f484ab+100 */
+background: #f57b89; /* Old browsers */
+background: -moz-linear-gradient(top, #f57b89 0%, #f49aa3 53%, #f484ab 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #f57b89 0%,#f49aa3 53%,#f484ab 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #f57b89 0%,#f49aa3 53%,#f484ab 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f57b89', endColorstr='#f484ab',GradientType=0 ); /* IE6-9 */
     
 
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 71%, 0% 100%);
-clip-path: polygon(0 0, 100% 0, 100% 71%, 0% 100%);
+    
 }
 
 .main{
@@ -130,6 +134,10 @@ section{
     
 }
 
+section:nth-of-type(1){
+    background: white;
+}
+
 
 .portafolio {
 
@@ -154,7 +162,8 @@ section{
     width: 75%;
     
     p{ 
-        font-family: 'Playfair Display SC', serif;                color : whitesmoke;
+        font-family: 'Playfair Display SC', serif;               
+        color : whitesmoke;
         text-align: center;
         padding: 1.5em .5em;
         text-transform: uppercase;
