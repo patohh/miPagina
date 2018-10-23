@@ -15,7 +15,7 @@ body {
   overflow-y: scroll;
   display: -ms-grid;
   display: grid;
-  background: #202020;
+  background: #fb929e;
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
 }
@@ -29,7 +29,7 @@ nav {
 }
 
 nav ul {
-  background: white;
+  background: #f57b89;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -53,32 +53,35 @@ ul li a {
   color: #252525;
   text-transform: uppercase;
   display: block;
+  color: whitesmoke;
   font-size: .7em;
 }
 
 .toggle {
-  background: white;
+  background: #f57b89;
   padding: 1.5em 1.4em;
   display: block;
 }
 
 .toggle .menu {
   float: right;
-  color: #252525;
+  color: whitesmoke;
   font-size: 1.7em;
   cursor: pointer;
   display: block;
 }
 
 .toggle figcaption {
-  color: #252525;
+  color: whitesmoke;
 }
 
 /*HEADER*/
 header {
   position: relative;
   height: 750px;
-  background: whitesmoke;
+  background: #f57b89;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 71%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 71%, 0% 100%);
 }
 
 .main {
@@ -93,22 +96,27 @@ header .main {
 .main h1 {
   margin: 80px 0px;
   font-size: 2.4em;
+  color: whitesmoke;
 }
 
-.main p {
-  margin: 30px auto;
-  font-size: 1.4em;
-  font-weight: 400;
+.main a {
+  background: transparent;
+  border: 5px solid whitesmoke;
+  padding: 15px 40px;
+  text-decoration: none;
+  color: whitesmoke;
+  text-transform: uppercase;
+  border-radius: 40px;
+  width: 40%;
+  text-align: center;
+  margin-top: 30px;
 }
 
 /*section*/
 section {
   position: relative;
+  background: #ffdfdf;
   height: 930px;
-}
-
-section:nth-of-type(1) {
-  background: white;
 }
 
 .portafolio h2 {
@@ -116,6 +124,7 @@ section:nth-of-type(1) {
   font-size: 1.7em;
   text-align: center;
   margin-top: 10%;
+  color: #aedefc;
 }
 
 .trabajos {
@@ -139,16 +148,8 @@ section:nth-of-type(1) {
 
 /*FOOTER*/
 footer {
-  height: 830px;
-}
-
-#particles-js {
-  position: relative;
-  margin: 0;
-  width: 100%;
-  height: 830px;
-  background: #202020;
-  z-index: 1000;
+  background: white;
+  height: 100vh;
 }
 
 .title {
@@ -156,15 +157,7 @@ footer {
 }
 
 footer .title h3 {
-  background: #40a8a8;
-  /* Old browsers */
-  /* FF3.6-15 */
-  /* Chrome10-25,Safari5.1-6 */
-  background: -webkit-gradient(linear, left top, right top, from(#40a8a8), color-stop(40%, #57b2b0), to(#38c9b8));
-  background: linear-gradient(to right, #40a8a8 0%, #57b2b0 40%, #38c9b8 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#40a8a8', endColorstr='#38c9b8',GradientType=1 );
-  /* IE6-9 */
+  background: #f57b89;
   color: whitesmoke;
   text-transform: uppercase;
   text-align: left;
@@ -177,7 +170,7 @@ footer .title h3 {
 
 footer .title p {
   margin-top: 40px;
-  color: white;
+  color: #aaa;
   text-align: left;
   padding: 10px 30px;
   font-size: .8em;
@@ -193,10 +186,12 @@ footer .correos i {
   display: block;
   margin-right: 29px;
   margin-left: 20px;
+  color: #aaa;
 }
 
 footer .correos p {
   margin-bottom: 20px;
+  color: #aaa;
 }
 
 .form-contact {
@@ -207,15 +202,7 @@ footer .correos p {
 .form-contact h4 {
   -webkit-clip-path: polygon(0 0, 100% 0, 86% 100%, 0% 100%);
   clip-path: polygon(0 0, 100% 0, 86% 100%, 0% 100%);
-  background: #40a8a8;
-  /* Old browsers */
-  /* FF3.6-15 */
-  /* Chrome10-25,Safari5.1-6 */
-  background: -webkit-gradient(linear, left top, right top, from(#40a8a8), color-stop(40%, #57b2b0), to(#38c9b8));
-  background: linear-gradient(to right, #40a8a8 0%, #57b2b0 40%, #38c9b8 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#40a8a8', endColorstr='#38c9b8',GradientType=1 );
-  /* IE6-9 */
+  background: #f57b89;
   color: whitesmoke;
   padding: 10px 40px;
   width: 50%;
@@ -226,7 +213,7 @@ footer .correos p {
 form {
   display: block;
   padding: 2em;
-  height: calc(70vh - 4em);
+  background: white;
 }
 
 form input {
@@ -256,17 +243,7 @@ form textarea {
 
 .submit .enviar {
   border: none;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#40a8a8+0,57b2b0+40,38c9b8+100 */
-  background: #40a8a8;
-  /* Old browsers */
-  /* FF3.6-15 */
-  /* Chrome10-25,Safari5.1-6 */
-  background: -webkit-gradient(linear, left top, right top, from(#40a8a8), color-stop(40%, #57b2b0), to(#38c9b8));
-  background: linear-gradient(to right, #40a8a8 0%, #57b2b0 40%, #38c9b8 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#40a8a8', endColorstr='#38c9b8',GradientType=1 );
-  /* IE6-9 */
-  padding: 15px 50px;
+  background: #f57b89;
   color: whitesmoke;
   text-transform: uppercase;
   border-radius: 40px;
