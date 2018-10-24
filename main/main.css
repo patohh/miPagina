@@ -153,7 +153,15 @@ section:nth-of-type(1) .foto {
   margin: 130px 0;
   height: 300px;
   max-width: 10%;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f49aa3+0,258dc8+100 */
   background: #f49aa3;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #f49aa3 0%, #258dc8 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f49aa3', endColorstr='#258dc8',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
   -webkit-transition: .9s;
   transition: .9s;
 }
