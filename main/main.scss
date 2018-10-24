@@ -151,7 +151,19 @@ section:nth-of-type(1){
     {
         color : grey;
         width: 60%;
-        margin: 40px auto;
+        margin: 50px auto;
+    }
+
+    .foto { 
+        margin: 130px 0;
+        height: 300px;
+        max-width: 10%;
+        background: #f49aa3;
+        transition: .9s;
+    }
+
+    .foto:hover{
+        max-width: 90%;
     }
 }
 
