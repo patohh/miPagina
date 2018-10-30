@@ -48,7 +48,16 @@
         <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam eligendi fugiat adipisci at sequi quibusdam ratione consequatur ipsa possimus sapiente suscipit voluptates, tenetur corrupti quia esse, porro quod repudiandae vero?</p>
        </div>
        <div class="foto">
-           <img src="image/about-me-foto.jpeg" alt="" srcset="">
+           <div>
+            <img src="image/about-me-foto.jpeg" alt="" srcset="">
+           </div>
+           <div class="redes">
+            <i class="fab fa-skype"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin"></i>
+           </div>
+           
+           </div>
        </div>
     </section>
     <section class="target2 portafolio">
@@ -145,7 +154,6 @@
            $('#about-me').fadeIn(3000);
        });
 
-      
 
     </script>
     <script>
@@ -156,11 +164,14 @@
     for (i = 0; i < acc.length; i++) {
     acc[i].addEventListener("click", function() {
     this.classList.toggle("active");
+    
     var panel = this.nextElementSibling;
     if (panel.style.maxHeight){
       panel.style.maxHeight = null;
+     
     } else {
       panel.style.maxHeight = panel.scrollHeight  + "px";
+      
     } 
   });
 }

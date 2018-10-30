@@ -76,6 +76,8 @@ ul li {
     display: block;
 }
 
+
+
 .toggle figcaption{
     color : whitesmoke;
 }
@@ -157,20 +159,22 @@ section:nth-of-type(1){
     .foto { 
         position: relative;
         margin: 130px 0;
-        height: 300px;
+        height: 500px;
         max-width: 10%;
+        bottom: 0;
         /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f49aa3+0,258dc8+100 */
-    background: #f49aa3; /* Old browsers */
-    background: -moz-linear-gradient(-45deg, #f49aa3 0%, #258dc8 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg, #f49aa3 0%,#258dc8 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(135deg, #f49aa3 0%,#258dc8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f49aa3', endColorstr='#258dc8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+        background: #f49aa3; /* Old browsers */
+        background: -moz-linear-gradient(-45deg, #f49aa3 0%, #258dc8 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(-45deg, #f49aa3 0%,#258dc8 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(135deg, #f49aa3 0%,#258dc8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f49aa3', endColorstr='#258dc8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
         transition: .9s;
 
         img{
             position: absolute;
-            width: 200px;
-            height: 250px;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
             top: 9%;
             left: -200px;
             transition: .9s;
@@ -178,10 +182,9 @@ section:nth-of-type(1){
     }
 
     .foto:hover{
-        max-width: 90%;
-
+        max-width: 100%;
         img{
-            left : 75px;
+            left : 110px;
         }
     }
 }
