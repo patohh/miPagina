@@ -102,21 +102,29 @@ header .main {
 
 .main h1 {
   margin: 80px 0px;
-  font-size: 2.4em;
+  font-size: 3em;
   color: whitesmoke;
 }
 
+.main h1 span {
+  color: #ffc4d0;
+  font-weight: bold;
+}
+
 .main a {
-  background: transparent;
-  border: 5px solid whitesmoke;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ef81b4+2,9742bf+47,7a07f4+100 */
+  background: #ef81b4;
+  /* Old browsers */
+  border: 3px solid  #ef81b4;
+  font-weight: bold;
   padding: 15px 40px;
   text-decoration: none;
   color: whitesmoke;
   text-transform: uppercase;
   border-radius: 40px;
   width: 40%;
+  margin: 100px auto;
   text-align: center;
-  margin-top: 30px;
 }
 
 /*section*/
@@ -169,11 +177,10 @@ section:nth-of-type(1) .foto {
 
 section:nth-of-type(1) .foto img {
   position: absolute;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  top: 9%;
-  left: -200px;
+  width: 350px;
+  height: 350px;
+  top: 12%;
+  left: -390px;
   -webkit-transition: .9s;
   transition: .9s;
 }
@@ -183,7 +190,7 @@ section:nth-of-type(1) .foto:hover {
 }
 
 section:nth-of-type(1) .foto:hover img {
-  left: 110px;
+  left: 10px;
 }
 
 section:nth-of-type(2) h1 {
@@ -228,7 +235,16 @@ footer {
 }
 
 footer .title h3 {
-  background: #f57b89;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ef81b4+1,9742bf+50,7a07f4+100 */
+  background: #ef81b4;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, color-stop(1%, #ef81b4), color-stop(50%, #9742bf), to(#7a07f4));
+  background: linear-gradient(to right, #ef81b4 1%, #9742bf 50%, #7a07f4 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef81b4', endColorstr='#7a07f4',GradientType=1 );
+  /* IE6-9 */
   color: whitesmoke;
   text-transform: uppercase;
   text-align: left;
@@ -273,7 +289,16 @@ footer .correos p {
 .form-contact h4 {
   -webkit-clip-path: polygon(0 0, 100% 0, 86% 100%, 0% 100%);
   clip-path: polygon(0 0, 100% 0, 86% 100%, 0% 100%);
-  background: #f57b89;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ef81b4+1,9742bf+50,7a07f4+100 */
+  background: #ef81b4;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, color-stop(1%, #ef81b4), color-stop(50%, #9742bf), to(#7a07f4));
+  background: linear-gradient(to right, #ef81b4 1%, #9742bf 50%, #7a07f4 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef81b4', endColorstr='#7a07f4',GradientType=1 );
+  /* IE6-9 */
   color: whitesmoke;
   padding: 10px 40px;
   width: 50%;
@@ -318,7 +343,17 @@ form textarea:focus {
 
 .submit .enviar {
   border: none;
-  background: #f57b89;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ef81b4+1,9742bf+50,7a07f4+100 */
+  background: #ef81b4;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, color-stop(1%, #ef81b4), color-stop(50%, #9742bf), to(#7a07f4));
+  background: linear-gradient(to right, #ef81b4 1%, #9742bf 50%, #7a07f4 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef81b4', endColorstr='#7a07f4',GradientType=1 );
+  /* IE6-9 */
+  font-weight: bold;
   color: whitesmoke;
   text-transform: uppercase;
   border-radius: 40px;

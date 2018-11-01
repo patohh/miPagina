@@ -109,21 +109,32 @@ header .main {
 
 .main h1{
     margin: 80px 0px ;
-    font-size: 2.4em;
+    font-size: 3em;
     color : whitesmoke;
+
+    span 
+    {
+        color :  #ffc4d0;
+        font-weight: bold;
+    }
 }
 
+
+
 .main a{ 
-    background: transparent;
-    border: 5px solid whitesmoke;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ef81b4+2,9742bf+47,7a07f4+100 */
+background: #ef81b4; /* Old browsers */
+    border: 3px solid  #ef81b4;
+    font-weight: bold;
     padding : 15px 40px;
     text-decoration: none;
     color : whitesmoke;
     text-transform: uppercase;
     border-radius: 40px;
     width: 40%;
+    margin :100px auto;
     text-align: center;
-    margin-top: 30px;
+    
 }
 
 
@@ -172,11 +183,11 @@ section:nth-of-type(1){
 
         img{
             position: absolute;
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            top: 9%;
-            left: -200px;
+            width: 350px;
+            height: 350px;
+            
+            top: 12%;
+            left: -390px;
             transition: .9s;
         }
     }
@@ -184,7 +195,7 @@ section:nth-of-type(1){
     .foto:hover{
         max-width: 100%;
         img{
-            left : 110px;
+            left : 10px;
         }
     }
 }
@@ -248,7 +259,12 @@ footer {
 footer .title{
 
     h3{
-        background: #f57b89;
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ef81b4+1,9742bf+50,7a07f4+100 */
+background: #ef81b4; /* Old browsers */
+background: -moz-linear-gradient(left, #ef81b4 1%, #9742bf 50%, #7a07f4 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, #ef81b4 1%,#9742bf 50%,#7a07f4 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, #ef81b4 1%,#9742bf 50%,#7a07f4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef81b4', endColorstr='#7a07f4',GradientType=1 ); /* IE6-9 */
         color : whitesmoke; 
         text-transform : uppercase;
          text-align : left; 
@@ -295,7 +311,12 @@ footer .correos{
     h4{
         -webkit-clip-path: polygon(0 0, 100% 0, 86% 100%, 0% 100%);
     clip-path: polygon(0 0, 100% 0, 86% 100%, 0% 100%);
-    background: #f57b89;
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ef81b4+1,9742bf+50,7a07f4+100 */
+background: #ef81b4; /* Old browsers */
+background: -moz-linear-gradient(left, #ef81b4 1%, #9742bf 50%, #7a07f4 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, #ef81b4 1%,#9742bf 50%,#7a07f4 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, #ef81b4 1%,#9742bf 50%,#7a07f4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef81b4', endColorstr='#7a07f4',GradientType=1 ); /* IE6-9 */
         color : whitesmoke;
         padding :10px 40px;
         width: 50%;
@@ -342,8 +363,13 @@ form{
 
 .submit .enviar{
     border : none;
-    background: #f57b89;
-    
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ef81b4+1,9742bf+50,7a07f4+100 */
+background: #ef81b4; /* Old browsers */
+background: -moz-linear-gradient(left, #ef81b4 1%, #9742bf 50%, #7a07f4 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, #ef81b4 1%,#9742bf 50%,#7a07f4 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, #ef81b4 1%,#9742bf 50%,#7a07f4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef81b4', endColorstr='#7a07f4',GradientType=1 ); /* IE6-9 */
+    font-weight: bold;
     color : whitesmoke;
     text-transform: uppercase;
     border-radius: 40px;
