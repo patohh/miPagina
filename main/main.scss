@@ -34,7 +34,7 @@ nav{
 }
 
 nav ul { 
-    background: #f57b89;
+    background: #520556;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -61,7 +61,7 @@ ul li {
 }
 
 .toggle {
-    background: #f57b89;
+    background: #520556;
     padding: 1.5em 1.4em;
     display: block;
    
@@ -86,12 +86,12 @@ ul li {
 header {
     position: relative;
     height: 750px;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f57b89+0,f49aa3+53,f484ab+100 */
-background: #f57b89; /* Old browsers */
-background: -moz-linear-gradient(top, #f57b89 0%, #f49aa3 53%, #f484ab 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, #f57b89 0%,#f49aa3 53%,#f484ab 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, #f57b89 0%,#f49aa3 53%,#f484ab 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f57b89', endColorstr='#f484ab',GradientType=0 ); /* IE6-9 */
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#520556+1,8b104e+19,ca431d+43,ff9900+71,f7ef00+100 */
+background: #520556; /* Old browsers */
+background: -moz-linear-gradient(top, #520556 1%, #8b104e 19%, #ca431d 43%, #ff9900 71%, #f7ef00 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #520556 1%,#8b104e 19%,#ca431d 43%,#ff9900 71%,#f7ef00 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #520556 1%,#8b104e 19%,#ca431d 43%,#ff9900 71%,#f7ef00 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#520556', endColorstr='#f7ef00',GradientType=0 ); /* IE6-9 */
     
 
     
@@ -109,27 +109,27 @@ header .main {
 
 .main h1{
     margin: 80px 0px ;
-    font-size: 3em;
+    font-size: 2.4em;
     color : whitesmoke;
+    
 
     span 
     {
-        color :  #ffc4d0;
+        color : white;
         font-weight: bold;
+        text-transform: lowercase;
     }
 }
 
 
 
 .main a{ 
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ef81b4+2,9742bf+47,7a07f4+100 */
-background: #ef81b4; /* Old browsers */
-    border: 3px solid  #ef81b4;
     font-weight: bold;
     padding : 15px 40px;
     text-decoration: none;
     color : whitesmoke;
     text-transform: uppercase;
+    border : 2px solid  whitesmoke;
     border-radius: 40px;
     width: 40%;
     margin :100px auto;
