@@ -14,32 +14,33 @@
 
    
 
-    <nav class="target1">
-        <div class="toggle">
-            <i class="fas fa-bars menu" id="menu"></i>
-
-            <figcaption>P</figcaption>
-        </div>
-        <ul class="ul">  
-            <li>
-                <a href="#">Inicio</a>
-            </li>
-           
-            <li>
-                <a href="#" class="porta" id="porta">Portafolio</a>
-            </li>
-            <li>
-                <a href="#" class="porta" id="porta">TROSKA</a>
-            </li>
-            <li>  
-                <a href="#" id="cont">Contacto</a>
-            </li>
-        </ul>
-    </nav>
+  
     <header>
+            <nav class="target1">
+                    <div class="toggle">
+                        <i class="fas fa-bars menu" id="menu"></i>
+            
+                        <figcaption>P</figcaption>
+                    </div>
+                    <ul class="ul">  
+                        <li>
+                            <a href="#">Inicio</a>
+                        </li>
+                       
+                        <li>
+                            <a href="#" class="porta" id="porta">Portafolio</a>
+                        </li>
+                        <li>
+                            <a href="#" class="porta" id="porta">TROSKA</a>
+                        </li>
+                        <li>  
+                            <a href="#" id="cont">Contacto</a>
+                        </li>
+                    </ul>
+                </nav>
        <div class="main">
         <h1 class="title-h" >Desarrolador <span>freeLance </span></h1>
-        <a href="#" id="about-me">sobre mi</a>
+        <a href="#" id="contact-me">contacto</a>
        </div>
     </header>
     <section class="sobre-mi target4" id>
@@ -49,19 +50,30 @@
        </div>
        <div class="foto">
            <div>
-            <img src="image/about-me-foto.jpeg" alt="" srcset="">
+            <img src="image/about-me-foto.jpeg" alt="" srcset="">-->
             <!--div social-->
-            <!--<div class="redes">
+            <div class="redes" id="particle-js">
                 <i class="fab fa-skype"></i>
                 <i class="fab fa-instagram"></i>
                 <i class="fab fa-linkedin"></i>
-           </div>-->
+            </div>
         </div>
            </div>
        </div>
     </section>
     <section class="target2 portafolio">
-       <h1>portafolio</h1>
+       <div class="tittle-p">
+            <h1>portafolio</h1>
+       </div>
+       <div class="works">
+            <div class="troska bloques">
+
+            </div>
+            <div class="fop bloques">
+
+            </div>
+       </div>
+
     </section>
     <Footer class="contact target3" >
        <div id="form-body" >
@@ -121,14 +133,14 @@
     <script type="module">
         import jump from './node_modules/jump.js/dist/jump.module.js';
         
-        var me = document.getElementById('about-me');
+        var contact = document.getElementById('contact-me');
         
         var Porta = document.getElementById('porta');
       
         var con = document.getElementById('cont');
        
-        me.addEventListener('click',() => {
-            jump('.target4',{
+        contact.addEventListener('click',() => {
+            jump('.target3',{
                 duration : 3000
             });
         });

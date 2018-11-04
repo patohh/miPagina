@@ -15,7 +15,6 @@ body {
   overflow-y: scroll;
   display: -ms-grid;
   display: grid;
-  background: #fb929e;
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
 }
@@ -29,7 +28,7 @@ nav {
 }
 
 nav ul {
-  background: #520556;
+  background: transparent;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -58,7 +57,7 @@ ul li a {
 }
 
 .toggle {
-  background: #520556;
+  background: transparent;
   padding: 1.5em 1.4em;
   display: block;
 }
@@ -78,17 +77,9 @@ ul li a {
 /*HEADER*/
 header {
   position: relative;
-  height: 750px;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#520556+1,8b104e+19,ca431d+43,ff9900+71,f7ef00+100 */
-  background: #520556;
-  /* Old browsers */
-  /* FF3.6-15 */
-  /* Chrome10-25,Safari5.1-6 */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #520556), color-stop(19%, #8b104e), color-stop(43%, #ca431d), color-stop(71%, #ff9900), to(#f7ef00));
-  background: linear-gradient(to bottom, #520556 1%, #8b104e 19%, #ca431d 43%, #ff9900 71%, #f7ef00 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#520556', endColorstr='#f7ef00',GradientType=0 );
-  /* IE6-9 */
+  height: 100vh;
+  background-color: #FEE140;
+  background-image: linear-gradient(344deg, #FEE140 20%, #FA709A 100%);
 }
 
 .main {
@@ -121,7 +112,7 @@ header .main {
   border: 2px solid  whitesmoke;
   border-radius: 40px;
   width: 40%;
-  margin: 100px auto;
+  margin: 300px auto;
   text-align: center;
 }
 
@@ -129,23 +120,19 @@ header .main {
 section {
   position: relative;
   background: #ffdfdf;
-  height: 930px;
+  height: 100vh;
 }
 
 /*aboutme*/
 section:nth-of-type(1) {
-  background: white;
+  background: whitesmoke;
 }
 
 section:nth-of-type(1) h1 {
-  color: #f484ab;
+  color: #3f3d3d;
   text-transform: uppercase;
   margin: 30px auto;
   padding: 20px 25px;
-  -webkit-text-decoration: underline wavy #f49aa3;
-          text-decoration: underline wavy #f49aa3;
-  -webkit-text-decoration-color: #f49aa3;
-          text-decoration-color: #f49aa3;
 }
 
 section:nth-of-type(1) p {
@@ -155,44 +142,39 @@ section:nth-of-type(1) p {
 }
 
 section:nth-of-type(1) .foto {
-  position: relative;
+  height: 50vh;
   margin: 130px 0;
-  height: 500px;
-  max-width: 10%;
+  text-align: center;
   bottom: 0;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f49aa3+0,258dc8+100 */
-  background: #f49aa3;
-  /* Old browsers */
-  /* FF3.6-15 */
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg, #f49aa3 0%, #258dc8 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f49aa3', endColorstr='#258dc8',GradientType=1 );
-  /* IE6-9 fallback on horizontal gradient */
-  -webkit-transition: .9s;
-  transition: .9s;
+  background: #4e4c4c;
 }
 
 section:nth-of-type(1) .foto img {
-  position: absolute;
-  width: 350px;
-  height: 350px;
-  top: 12%;
-  left: -390px;
-  -webkit-transition: .9s;
-  transition: .9s;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 30px auto;
 }
 
-section:nth-of-type(1) .foto:hover {
-  max-width: 100%;
+section:nth-of-type(1) .foto .redes {
+  color: whitesmoke;
+  font-size: 1.7em;
+  margin: 55px auto;
 }
 
-section:nth-of-type(1) .foto:hover img {
-  left: 10px;
+section:nth-of-type(1) .foto .redes i {
+  cursor: pointer;
+}
+
+section:nth-of-type(2) {
+  background: whitesmoke;
 }
 
 section:nth-of-type(2) h1 {
-  color: #36ec6d;
+  color: #1d1c1c;
+  margin: 25px auto;
+  padding: 20px 25px;
+  text-transform: uppercase;
 }
 
 .portafolio h2 {

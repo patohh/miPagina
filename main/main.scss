@@ -19,7 +19,7 @@ body{
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
     display: grid;
-    background: #fb929e;
+    
     scroll-snap-type:  y mandatory;
     overflow-y: scroll;
 }
@@ -34,7 +34,7 @@ nav{
 }
 
 nav ul { 
-    background: #520556;
+    background: transparent;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -61,7 +61,7 @@ ul li {
 }
 
 .toggle {
-    background: #520556;
+    background: transparent;
     padding: 1.5em 1.4em;
     display: block;
    
@@ -85,15 +85,10 @@ ul li {
 /*HEADER*/
 header {
     position: relative;
-    height: 750px;
-   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#520556+1,8b104e+19,ca431d+43,ff9900+71,f7ef00+100 */
-background: #520556; /* Old browsers */
-background: -moz-linear-gradient(top, #520556 1%, #8b104e 19%, #ca431d 43%, #ff9900 71%, #f7ef00 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, #520556 1%,#8b104e 19%,#ca431d 43%,#ff9900 71%,#f7ef00 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, #520556 1%,#8b104e 19%,#ca431d 43%,#ff9900 71%,#f7ef00 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#520556', endColorstr='#f7ef00',GradientType=0 ); /* IE6-9 */
+    height: 100vh;
+    background-color: #FEE140;
+    background-image: linear-gradient(344deg, #FEE140 20%, #FA709A 100%);
     
-
     
 }
 
@@ -132,8 +127,9 @@ header .main {
     border : 2px solid  whitesmoke;
     border-radius: 40px;
     width: 40%;
-    margin :100px auto;
+    margin :300px auto;
     text-align: center;
+    
     
 }
 
@@ -143,21 +139,20 @@ header .main {
 section{
     position: relative;
     background: #ffdfdf;
-    height: 930px;
+    height: 100vh;
     
 }
 /*aboutme*/
 section:nth-of-type(1){
-    background: white;
+    background : whitesmoke;
 
     h1
     {
-        color :#f484ab;
+        color :rgb(63, 61, 61);;
         text-transform: uppercase;
         margin: 30px auto;
         padding: 20px 25px;
-        text-decoration: underline wavy #f49aa3; 
-        text-decoration-color: #f49aa3;
+        
     }
 
     p
@@ -168,43 +163,49 @@ section:nth-of-type(1){
     }
 
     .foto { 
-        position: relative;
+        height: 50vh;
         margin: 130px 0;
-        height: 500px;
-        max-width: 10%;
+        text-align: center;
         bottom: 0;
-        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f49aa3+0,258dc8+100 */
-        background: #f49aa3; /* Old browsers */
-        background: -moz-linear-gradient(-45deg, #f49aa3 0%, #258dc8 100%); /* FF3.6-15 */
-        background: -webkit-linear-gradient(-45deg, #f49aa3 0%,#258dc8 100%); /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(135deg, #f49aa3 0%,#258dc8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f49aa3', endColorstr='#258dc8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-        transition: .9s;
+        background: rgb(78, 76, 76);
+        
+        
 
         img{
-            position: absolute;
-            width: 350px;
-            height: 350px;
+           
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 30px auto;
+
+        }
+
+        .redes
+        {
+            color : whitesmoke;
+            font-size : 1.7em;
+            margin: 55px auto;
             
-            top: 12%;
-            left: -390px;
-            transition: .9s;
+            i
+            {
+                cursor : pointer;
+            }
         }
     }
 
-    .foto:hover{
-        max-width: 100%;
-        img{
-            left : 10px;
-        }
-    }
+   
 }
 
 section:nth-of-type(2){
 
+    background: whitesmoke;
+
 
     h1 {
-        color :#36ec6d;
+        color :rgb(29, 28, 28);
+        margin: 25px auto;
+        padding: 20px 25px;
+        text-transform: uppercase;
     }
 }
 
@@ -260,11 +261,11 @@ footer .title{
 
     h3{
         /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ef81b4+1,9742bf+50,7a07f4+100 */
-background: #ef81b4; /* Old browsers */
-background: -moz-linear-gradient(left, #ef81b4 1%, #9742bf 50%, #7a07f4 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(left, #ef81b4 1%,#9742bf 50%,#7a07f4 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to right, #ef81b4 1%,#9742bf 50%,#7a07f4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef81b4', endColorstr='#7a07f4',GradientType=1 ); /* IE6-9 */
+        background: #ef81b4; /* Old browsers */
+        background: -moz-linear-gradient(left, #ef81b4 1%, #9742bf 50%, #7a07f4 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(left, #ef81b4 1%,#9742bf 50%,#7a07f4 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right, #ef81b4 1%,#9742bf 50%,#7a07f4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef81b4', endColorstr='#7a07f4',GradientType=1 ); /* IE6-9 */
         color : whitesmoke; 
         text-transform : uppercase;
          text-align : left; 
@@ -310,13 +311,13 @@ footer .correos{
     background: none;
     h4{
         -webkit-clip-path: polygon(0 0, 100% 0, 86% 100%, 0% 100%);
-    clip-path: polygon(0 0, 100% 0, 86% 100%, 0% 100%);
+        clip-path: polygon(0 0, 100% 0, 86% 100%, 0% 100%);
         /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ef81b4+1,9742bf+50,7a07f4+100 */
-background: #ef81b4; /* Old browsers */
-background: -moz-linear-gradient(left, #ef81b4 1%, #9742bf 50%, #7a07f4 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(left, #ef81b4 1%,#9742bf 50%,#7a07f4 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to right, #ef81b4 1%,#9742bf 50%,#7a07f4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef81b4', endColorstr='#7a07f4',GradientType=1 ); /* IE6-9 */
+        background: #ef81b4; /* Old browsers */
+        background: -moz-linear-gradient(left, #ef81b4 1%, #9742bf 50%, #7a07f4 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(left, #ef81b4 1%,#9742bf 50%,#7a07f4 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right, #ef81b4 1%,#9742bf 50%,#7a07f4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef81b4', endColorstr='#7a07f4',GradientType=1 ); /* IE6-9 */
         color : whitesmoke;
         padding :10px 40px;
         width: 50%;
@@ -364,11 +365,11 @@ form{
 .submit .enviar{
     border : none;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ef81b4+1,9742bf+50,7a07f4+100 */
-background: #ef81b4; /* Old browsers */
-background: -moz-linear-gradient(left, #ef81b4 1%, #9742bf 50%, #7a07f4 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(left, #ef81b4 1%,#9742bf 50%,#7a07f4 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to right, #ef81b4 1%,#9742bf 50%,#7a07f4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef81b4', endColorstr='#7a07f4',GradientType=1 ); /* IE6-9 */
+    background: #ef81b4; /* Old browsers */
+    background: -moz-linear-gradient(left, #ef81b4 1%, #9742bf 50%, #7a07f4 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #ef81b4 1%,#9742bf 50%,#7a07f4 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #ef81b4 1%,#9742bf 50%,#7a07f4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef81b4', endColorstr='#7a07f4',GradientType=1 ); /* IE6-9 */
     font-weight: bold;
     color : whitesmoke;
     text-transform: uppercase;
