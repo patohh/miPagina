@@ -78,49 +78,62 @@ ul li a {
 header {
   position: relative;
   height: 100vh;
-  background-color: #FEE140;
-  background-image: linear-gradient(344deg, #FEE140 20%, #FA709A 100%);
+  background-color: #0093E9;
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
 }
 
 .main {
   display: -ms-grid;
   display: grid;
+  height: 86vh;
 }
 
 header .main {
-  padding: 2em;
+  padding: 1em;
 }
 
-.main h1 {
-  margin: 80px 0px;
+.main .titulo h1 {
+  margin: 80px auto 0px 10px;
   font-size: 2.4em;
   color: whitesmoke;
+  text-align: center;
+  font-weight: bold;
 }
 
-.main h1 span {
+.main .titulo p {
   color: white;
-  font-weight: bold;
-  text-transform: lowercase;
+  text-align: center;
 }
 
 .main a {
   font-weight: bold;
   padding: 15px 40px;
+  margin: 30px auto;
   text-decoration: none;
   color: whitesmoke;
   text-transform: uppercase;
   border: 2px solid  whitesmoke;
   border-radius: 40px;
-  width: 40%;
-  margin: 300px auto;
   text-align: center;
+  width: 50%;
+  display: block;
+}
+
+.redes {
+  text-align: center;
+  border-radius: 30px;
+  font-size: 1.5em;
+  margin: 40% auto;
+  left: 0;
+  right: 0;
+  color: white;
 }
 
 /*section*/
 section {
   position: relative;
   background: #ffdfdf;
-  height: 100vh;
+  height: 700px;
 }
 
 /*aboutme*/
@@ -141,29 +154,17 @@ section:nth-of-type(1) p {
   margin: 50px auto;
 }
 
-section:nth-of-type(1) .foto {
-  height: 50vh;
-  margin: 130px 0;
+section:nth-of-type(1) a {
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 15px 60px;
+  border-radius: 40px;
   text-align: center;
-  bottom: 0;
-  background: #4e4c4c;
-}
-
-section:nth-of-type(1) .foto img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  margin: 30px auto;
-}
-
-section:nth-of-type(1) .foto .redes {
-  color: whitesmoke;
-  font-size: 1.7em;
-  margin: 55px auto;
-}
-
-section:nth-of-type(1) .foto .redes i {
-  cursor: pointer;
+  color: white;
+  margin: 100px auto;
+  display: block;
+  width: 30%;
+  background: #242424;
 }
 
 section:nth-of-type(2) {
@@ -202,6 +203,36 @@ section:nth-of-type(2) h1 {
   text-align: center;
   padding: 1.5em .5em;
   text-transform: uppercase;
+}
+
+.work-t {
+  background: #313131;
+  height: 40vh;
+}
+
+.work-t p {
+  color: white;
+  font-size: .8em;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.work-t h1 {
+  text-align: center;
+  color: whitesmoke;
+  font-weight: bold;
+}
+
+.work-t a {
+  background: #0093E9;
+  text-decoration: none;
+  color: white;
+  padding: 15px 70px;
+  border-radius: 40px;
+  display: block;
+  width: 50%;
+  text-align: center;
+  margin: 50px auto;
 }
 
 /*FOOTER*/
