@@ -11,15 +11,10 @@
     
 </head>
 <body>
-
-   
-
-  
     <header>
             <nav class="target1">
                     <div class="toggle">
                         <i class="fas fa-bars menu" id="menu"></i>
-            
                         <figcaption>P</figcaption>
                     </div>
                     <ul class="ul">  
@@ -27,10 +22,10 @@
                             <a href="#">Inicio</a>
                         </li>
                         <li>
-                            <a href="#" class="porta" id="porta">Portafolio</a>
+                            <a href="#"  id="sobre-mi">Sobre mi</a>
                         </li>
                         <li>
-                            <a href="#" class="porta" id="porta">TROSKA</a>
+                            <a href="#" class="porta" id="porta">Portafolio</a>
                         </li>
                         <li>  
                             <a href="#" id="cont">Contacto</a>
@@ -51,58 +46,63 @@
        </div>
     </header>
     <section class="sobre-mi target4" id>
-       <div class="text">
-        <h1>sobre mi</h1>
-        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam eligendi fugiat adipisci at sequi quibusdam ratione consequatur ipsa possimus sapiente suscipit voluptates, tenetur corrupti quia esse, porro quod repudiandae vero?</p>
-        <a href="#">CV</a>
-    </div>
+       <div class="conoceme">
+            <h1>sobre mi</h1>
+            <img src="./image/yo.jpg" alt="">
+            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam eligendi fugiat adipisci at sequi quibusdam ratione consequatur ipsa possimus sapiente suscipit voluptates, tenetur corrupti quia esse, porro quod repudiandae vero?</p>
+            <a href="#">CV</a>
+        </div>
+        <div class="habilidades">
+            <div class="uno"></div>
+            <div class="dos"></div>
+            <div class="tres"></div>
+        </div>
     </section>
     <section class="target2 portafolio">
        <div class="tittle-p">
             <h1>portafolio</h1>
        </div>
        <div class="works">
-           
+           <div class="troska work">
+
+           </div>
+           <div class="fop work">
+
+           </div>
        </div>
-      
     </section>
-    <div class="work-t">
-        <p>Estoy disponible para trabajo freelance</p>
-        <h1>Trabajemos juntos ! </h1>
-        <a href="#">Contactame</a>
-   </div>
+
     <Footer class="contact target3" >
        <div id="form-body" >
-        <div class="title" data-sal-duration="1300" data-sal="slide-up" data-sal-delay="300" data-sal-ease="easing-out-bounce">
-            <h3 
-         data-sal-duration="1300" data-sal="slide-right" data-sal-delay="300" data-sal-ease="easing-out-bounce">contacto</h3>
-        <p>Aqui encontraras toda informacion de contacto, si quieres contactarte conmigo solo envia un mensaje y me pondre en contacto con usted :)</p>
+        <div class="title" >
+        <h3>contacto</h3>
+        <p class="info">Aqui encontraras toda informacion de contacto, si quieres contactarte conmigo solo envia un mensaje y me pondre en contacto con usted :)</p>
         </div >
-         <div class="correos" data-sal-duration="1300" data-sal="slide-right" data-sal-delay="300" data-sal-ease="easing-out-bounce">
+         <div class="correos">
              <div class="contacto-mail-duoc" style="color: white; font-size: .9em;">
              <i class="far fa-envelope-open"></i>
              <p>pa.sotoq@alumnos.duoc.cl</p>
          </div>
          <div class="personal-email" style="color : white; font-size: .9em;">
              <i class="far fa-envelope-open"></i>
-             <p>patricio.s.quevedo@gmail.com</p>
+             <p>pa.quev97@gmail.com</p>
          </div>
          </div>
          <div class="form-contact"  >
-             <h4 data-sal-duration="1300" data-sal="slide-right" data-sal-delay="300" data-sal-ease="easing-out-bounce">Formulario</h4>
+             <h4 >Formulario</h4>
              <form class="form" >
-                 <div class="form-name" data-sal-duration="1300" data-sal="slide-right" data-sal-delay="300" data-sal-ease="easing-out-bounce">
+                 <div class="form-name" >
                      <input type="text" placeholder="Nombre">
                      <div class="border-box"></div>
                  </div>
-                 <div class="form-email" data-sal-duration="1300" data-sal="slide-right" data-sal-delay="300" data-sal-ease="easing-out-bounce">
+                 <div class="form-email">
                     <input type="email" placeholder="Correo">
                     <div class="border-box"></div>
                 </div>
-                <div class="ta-descrip" data-sal-duration="1300" data-sal="slide-right" data-sal-delay="300" data-sal-ease="easing-out-bounce">
+                <div class="ta-descrip" >
                     <textarea name="" id="" rows="10" cols="35" placeholder="Ingrese su mensaje aqui"></textarea>
                 </div>
-                <div class="submit" data-sal-duration="1300" data-sal="slide-right" data-sal-delay="300" data-sal-ease="easing-out-bounce">
+                <div class="submit" >
                     <input type="submit" value="enviar" class="enviar">
                 </div>
              </form>
@@ -129,12 +129,21 @@
     <script type="module">
         import jump from './node_modules/jump.js/dist/jump.module.js';
         
+        var aboutme = document.getElementById('sobre-mi');
+
         var contact = document.getElementById('contact-me');
         
         var Porta = document.getElementById('porta');
       
         var con = document.getElementById('cont');
        
+        aboutme.addEventListener('click',() => {
+            jump('.target4',{
+                duration : 3000
+            });
+        });
+       
+        
         contact.addEventListener('click',() => {
             jump('.target3',{
                 duration : 3000

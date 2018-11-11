@@ -77,7 +77,7 @@ ul li a {
 /*HEADER*/
 header {
   position: relative;
-  height: 100vh;
+  height: 800px;
   background-color: #0093E9;
   background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
 }
@@ -133,12 +133,14 @@ header .main {
 section {
   position: relative;
   background: #ffdfdf;
-  height: 700px;
 }
 
 /*aboutme*/
 section:nth-of-type(1) {
-  background: whitesmoke;
+  background: white;
+  display: -ms-grid;
+  display: grid;
+  height: 800px;
 }
 
 section:nth-of-type(1) h1 {
@@ -148,20 +150,28 @@ section:nth-of-type(1) h1 {
   padding: 20px 25px;
 }
 
+section:nth-of-type(1) img {
+  margin: 1px auto;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  display: block;
+}
+
 section:nth-of-type(1) p {
   color: grey;
   width: 60%;
-  margin: 50px auto;
+  margin: 40px auto;
 }
 
 section:nth-of-type(1) a {
   text-decoration: none;
   text-transform: uppercase;
-  padding: 15px 60px;
+  padding: 13px 50px;
   border-radius: 40px;
   text-align: center;
   color: white;
-  margin: 100px auto;
+  margin: 80px auto;
   display: block;
   width: 30%;
   background: #242424;
@@ -169,6 +179,7 @@ section:nth-of-type(1) a {
 
 section:nth-of-type(2) {
   background: whitesmoke;
+  height: 800px;
 }
 
 section:nth-of-type(2) h1 {
@@ -176,6 +187,18 @@ section:nth-of-type(2) h1 {
   margin: 25px auto;
   padding: 20px 25px;
   text-transform: uppercase;
+}
+
+section:nth-of-type(2) .works {
+  display: -ms-grid;
+  display: grid;
+}
+
+section:nth-of-type(2) .work {
+  height: 250px;
+  width: 250px;
+  background: #ccc;
+  margin: 20px auto;
 }
 
 .portafolio h2 {
@@ -205,40 +228,12 @@ section:nth-of-type(2) h1 {
   text-transform: uppercase;
 }
 
-.work-t {
-  background: #313131;
-  height: 40vh;
-}
-
-.work-t p {
-  color: #c5c5c5;
-  font-size: .8em;
-  margin: 30px auto;
-  text-align: center;
-}
-
-.work-t h1 {
-  text-align: center;
-  color: whitesmoke;
-  font-weight: bold;
-}
-
-.work-t a {
-  background: #0093E9;
-  text-decoration: none;
-  color: white;
-  padding: 15px 70px;
-  border-radius: 40px;
-  display: block;
-  width: 50%;
-  text-align: center;
-  margin: 50px auto;
-}
-
 /*FOOTER*/
 footer {
   background: #252525;
   height: 100vh;
+  display: -ms-grid;
+  display: grid;
 }
 
 .title {
@@ -246,16 +241,8 @@ footer {
 }
 
 footer .title h3 {
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ef81b4+1,9742bf+50,7a07f4+100 */
-  background: #ef81b4;
-  /* Old browsers */
-  /* FF3.6-15 */
-  /* Chrome10-25,Safari5.1-6 */
-  background: -webkit-gradient(linear, left top, right top, color-stop(1%, #ef81b4), color-stop(50%, #9742bf), to(#7a07f4));
-  background: linear-gradient(to right, #ef81b4 1%, #9742bf 50%, #7a07f4 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef81b4', endColorstr='#7a07f4',GradientType=1 );
-  /* IE6-9 */
+  background-color: #0093E9;
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
   color: whitesmoke;
   text-transform: uppercase;
   text-align: left;
@@ -277,13 +264,14 @@ footer .title p {
 footer .correos {
   margin-top: 30px;
   padding: 1.4em 1.5em;
+  background: #252525;
 }
 
 footer .correos i {
   float: left;
   display: block;
-  margin-right: 29px;
-  margin-left: 20px;
+  margin-right: 23px;
+  margin-left: 15px;
   color: #aaa;
 }
 
@@ -293,28 +281,20 @@ footer .correos p {
 }
 
 .form-contact {
-  margin-top: 40px;
-  background: none;
+  background: #252525;
 }
 
 .form-contact h4 {
+  background-color: #0093E9;
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+  color: whitesmoke;
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 1.4em;
+  width: 50%;
+  padding: 10px 40px;
   -webkit-clip-path: polygon(0 0, 100% 0, 86% 100%, 0% 100%);
   clip-path: polygon(0 0, 100% 0, 86% 100%, 0% 100%);
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ef81b4+1,9742bf+50,7a07f4+100 */
-  background: #ef81b4;
-  /* Old browsers */
-  /* FF3.6-15 */
-  /* Chrome10-25,Safari5.1-6 */
-  background: -webkit-gradient(linear, left top, right top, color-stop(1%, #ef81b4), color-stop(50%, #9742bf), to(#7a07f4));
-  background: linear-gradient(to right, #ef81b4 1%, #9742bf 50%, #7a07f4 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef81b4', endColorstr='#7a07f4',GradientType=1 );
-  /* IE6-9 */
-  color: whitesmoke;
-  padding: 10px 40px;
-  width: 50%;
-  font-size: 1.4em;
-  text-transform: uppercase;
 }
 
 form {
@@ -354,21 +334,54 @@ form textarea:focus {
 
 .submit .enviar {
   border: none;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ef81b4+1,9742bf+50,7a07f4+100 */
-  background: #ef81b4;
-  /* Old browsers */
-  /* FF3.6-15 */
-  /* Chrome10-25,Safari5.1-6 */
-  background: -webkit-gradient(linear, left top, right top, color-stop(1%, #ef81b4), color-stop(50%, #9742bf), to(#7a07f4));
-  background: linear-gradient(to right, #ef81b4 1%, #9742bf 50%, #7a07f4 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef81b4', endColorstr='#7a07f4',GradientType=1 );
-  /* IE6-9 */
+  background-color: #0093E9;
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
   font-weight: bold;
   color: whitesmoke;
   text-transform: uppercase;
   border-radius: 40px;
   margin: 30px auto;
   display: block;
+}
+
+@media (min-width: 768px) {
+  header {
+    height: 100vh;
+  }
+  header .main .titulo h1 {
+    font-size: 3.3em;
+  }
+  header .main .titulo a {
+    width: 30%;
+  }
+  header .redes {
+    font-size: 1.8em;
+  }
+  section h1 {
+    font-size: 2em;
+  }
+  section:nth-of-type(1) p {
+    font-size: 1.3em;
+    text-align: center;
+  }
+  section:nth-of-type(1) a {
+    padding: 20px 40px;
+  }
+  footer .title h3 {
+    width: 28%;
+  }
+  footer .title p {
+    font-size: 1.1em;
+  }
+  .correos {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% auto;
+        grid-template-columns: 50% auto;
+    text-align: center;
+  }
+  .form-contact h4 {
+    width: 28%;
+  }
 }
 /*# sourceMappingURL=main.css.map */
